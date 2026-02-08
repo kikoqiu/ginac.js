@@ -1,0 +1,36 @@
+{
+  "name": "ginac",
+  "version": "0.0.1",
+  "description": "ginac.js is a JavaScript library that provides an interface to the GiNaC C++ library for symbolic mathematical computations. It allows users to perform algebraic manipulations, calculus operations, and other symbolic computations directly in JavaScript.",
+  "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "doc:html": "jsdoc -c jsdoc.json",
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [
+    "ginac",
+    "symbolic",
+    "mathematics",
+    "c++"
+  ],
+  "author": "qiu.kiko@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "docdash": "^2.0.2",
+    "esbuild": "^0.27.2",
+    "jest": "^30.2.0",
+    "jsdoc": "^4.0.5",
+    "rollup": "^4.57.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  }
+}
